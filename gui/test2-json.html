@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="linkers/test2-json.js"></script>
+</head>
+<header> <button type="button" class="btn btn-outline-success" onclick="location.href='frontpage.html'">Back</button></header>
+<body>
+    <p>this button invokes the function in javascript which inturn triggers the python script . that python script the reads the JSON and shows the output</p>
+    <button onclick="my_fun()">show data</button>
+    <br>
+    using the following inputs we are sending arguments to the python script which then writes these inputs to the JSON file . the whole purpose is to test how we can transfer data between our engine and the front end
+    <br>
+    <br>
+    <label>input name of new member</label>
+    <input type="text" id="123text">
+    <br>
+    <label>enter aadress</label>
+    <input type="text" id="123address">
+    <br>
+    <label>enter phone no</label>
+    <input type="text" id="123phone">
+    <br>
+    <button id="1btn" onclick="add_more()">add data</button>
+    <p id="para123"></p>
+    <button onclick="new_fun()">check json formatting</button>
+    <ul id="ul123"></ul>
+    <button onclick="new_buffer()">check json formatting from buffer</button>
+    <ul id="bufferul"></ul>
+    <div id='ffgg'></div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome To Maldy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<section id="nav-bar">
+        <!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/antivirus-vector.svg" width="40" height="40" class="d-inline-block align-top" alt="">
+         Maldy 
+        </a>
+        <button type="button" class="btn btn-outline-success" onclick="location.href='frontpage.html'">Back</button>
+</nav>
+</section>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Malware analysis</h1>
+      <p class="lead">In order to get started with the malware analysis you need to follow following steps.</p>
+      <span class="badge badge-primary">choose csv</span>
+      <span class="badge badge-warning">preprocessing</span>
+      <span class="badge badge-success">model selection</span>
+      
+    </div>
+    
+  </div>
+<div class="row">
+    <div class="col-sm-3">
+      <div class="card" >
+          <img src="images/csv.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Choose csv file</h5>
+          <p class="card-text">Please select a csv file which is behavioural report of the android or windows applications for processing.</p>
+          <div class="input-group mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" accept=".csv">
+                <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-success">Upload</button>
+            
+        </div>
+      </div>
+</div>
+    <div class="col-sm-3">
+        <div class="card" >
+            <img src="images/preprocess.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Preprocessing csv</h5>
+            <p class="card-text">The csv file needs to be preprocessed inorder to continue with the analysis of the malware investigation csv needs to be featurised.</p>
+            <a href="preprocessing.html" class="btn btn-primary">Start now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card" >
+              <img src="images/iconic-data-visualization-vectors.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Final data visualization</h5>
+              <p class="card-text">Inorder to see how accurate our dataset is we need to see correlation between our features. Best way to do that is to visualise the data</p>
+              <a href="visualisation.html" class="btn btn-primary">visualise</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" >
+                <img src="images/ml.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Model selection and analysis</h5>
+                <p class="card-text">Select the models from various machine learning models. To see which model performs better you can select various models at a time</p>
+                <a href="model_selection.html" class="btn btn-primary">Start now</a>
+              </div>
+            </div>
+          </div>
+  </div>
+</body>
+</html>
